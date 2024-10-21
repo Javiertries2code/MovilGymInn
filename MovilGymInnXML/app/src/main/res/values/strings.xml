@@ -6,4 +6,16 @@
     <string name="remember">Remember me</string>
     <string name="usuario">Usuario</string>
     <string name="clave">Contraseña</string>
+
+    <string name="EditTextName">Nombre</string>
+    <string name="EditTextSurname">Apellido</string>
+    <string name="EditTextEmail">Email</string>
+    <string name="EditTextFechaNac">Fecha Nacimiento</string>
+    <string name="EditTextUser">Usuario</string>
+    <string name="EditTextPassword">Contraseña</string>
+    <string name="LogoImage">TODO</string>
+    <string name="RegisterTitle">REGISTRO</string>
+    <string name="RegisterButton">Registrarse</string>
+    <string name="TextBack">Volver</string>
+    <string name="checkboxEntrenador">Entrenador</string>
 </resources>
