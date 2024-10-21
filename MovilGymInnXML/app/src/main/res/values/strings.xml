@@ -1,5 +1,4 @@
 <resources>
-    <!--Pantalla Login -->
     <string name="app_name">GymInnXML</string>
     <string name="nombre">GimmInn</string>
     <string name="login">Login</string>
@@ -15,12 +14,12 @@
     <string name="EditTextFechaNac">Fecha Nacimiento</string>
     <string name="EditTextUser">Usuario</string>
     <string name="EditTextPassword">Contraseña</string>
+    <string name="LogoImage">TODO</string>
     <string name="RegisterTitle">REGISTRO</string>
     <string name="RegisterButton">Registrarse</string>
     <string name="TextBack">Volver</string>
     <string name="checkboxEntrenador">Entrenador</string>
     <string name="imageViewRegister">Imagen</string>
-
 
     <!-- Pantalla WorkOuts  -->
     <string name="textName">WORKOUT</string>
