@@ -23,7 +23,19 @@
 
     <!-- Pantalla WorkOuts  -->
     <string name="textName">WORKOUT</string>
+    <string name="imageViewWorkouts">Imagen</string>
+    <string name="imageviewWorkouts2">TODO</string>
+    <string name="btnVolverWorkouts">Volver</string>
 
+    <!-- Pantalla Perfil  -->
+    <string name="btnVolverProfile">Volver</string>
+    <string name="ImagenCambioTema">TODO</string>
+    <string name="imagenCambioIdioma">TODO</string>
+    <string name="fecha_nacimientoProfile">Fecha Nacimiento</string>
+    <string name="emailProfile">Email</string>
+    <string name="usuarioProfile">Usuario</string>
+    <string name="apellidoProfile">Apellido</string>
+    <string name="nombreProfile">Nombre</string>
 
 
 
