@@ -38,7 +38,7 @@ class ProfileActivity :  AppCompatActivity() {
         }
         // Configura el listener para cambiar el idioma
         imageViewChangeLanguage.setOnClickListener {
-            
+            changeLanguage("es")
         }
 
 
@@ -63,6 +63,6 @@ class ProfileActivity :  AppCompatActivity() {
     }
 
     private fun changeLanguage(languageCode: String) {
-
+        
     }
 }
