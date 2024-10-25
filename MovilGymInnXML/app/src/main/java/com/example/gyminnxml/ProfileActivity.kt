@@ -7,7 +7,6 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import java.util.Locale
 
 class ProfileActivity :  AppCompatActivity() {
     //Lateinit lo que dice es que la variable va a ser inicializada mas tarde
@@ -22,6 +21,7 @@ class ProfileActivity :  AppCompatActivity() {
         btnVolverProfile.setOnClickListener {
             val intent = Intent(this, WorkOutsActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         //PreferenceManager.getDefaultSharedPreferences(this) Estabamos usando este codigo pero

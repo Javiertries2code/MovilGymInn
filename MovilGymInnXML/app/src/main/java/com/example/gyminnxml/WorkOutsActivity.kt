@@ -15,11 +15,13 @@ class WorkOutsActivity  : AppCompatActivity() {
         imagenProfile.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
+            finish()
         }
         val buttonVolver = findViewById<Button>(R.id.buttonVolverWorkouts)
         buttonVolver.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

@@ -17,6 +17,7 @@ class RegisterActivity : AppCompatActivity() {
         btnRegistro.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         //Este se cambia el Button por TextView para que funcione
@@ -24,6 +25,7 @@ class RegisterActivity : AppCompatActivity() {
         btnVolver.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
