@@ -102,27 +102,27 @@
         app:layout_constraintGuide_begin="69dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="43dp"
-        android:layout_height="37dp"
-        android:contentDescription="@string/imageLanguageChangeProfile"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/idioma"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="47dp"
         android:layout_height="37dp"
         android:contentDescription="@string/ImageThemeChangeProfile"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468"
         app:srcCompat="@drawable/cambiotema"
         tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

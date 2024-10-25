@@ -5,7 +5,7 @@
     <string name="registerLogin">Register</string>
     <string name="remember">Remember me</string>
     <string name="userLogin">User</string>
-    <string name="clave">Password</string>
+    <string name="passwordLogin" >Password</string>
     <string name="imageViewLogin">Image</string>
     <!-- Pantalla registro-->
     <string name="EditTextNameRegister">Name</string>
@@ -36,6 +36,8 @@
     <string name="userProfile">User</string>
     <string name="surnameProfile">Surname</string>
     <string name="nameProfile">Name</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
 
 
 

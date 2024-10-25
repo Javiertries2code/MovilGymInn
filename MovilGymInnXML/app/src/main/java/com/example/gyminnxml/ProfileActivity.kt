@@ -2,11 +2,16 @@ package com.example.gyminnxml
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import java.util.Locale
 
 class ProfileActivity :  AppCompatActivity() {
     //Lateinit lo que dice es que la variable va a ser inicializada mas tarde
@@ -14,6 +19,13 @@ class ProfileActivity :  AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Cargar el idioma almacenado
+        sharedPreferences = getSharedPreferences("document_sharedPreferences", MODE_PRIVATE)
+        val language = sharedPreferences.getString("language", "es") // "es" por defecto
+        setLocale(language ?: "es")
+
+
         setContentView(R.layout.activity_profile)
 
 
@@ -29,20 +41,38 @@ class ProfileActivity :  AppCompatActivity() {
         // archivo que solo sera accesible en nuestra aplicación
         sharedPreferences = getSharedPreferences("document_sharedPreferences", MODE_PRIVATE)
 
-        val imageViewChangeLanguage: ImageView = findViewById(R.id.imageView4)
+        val spinnerChangeLanguage: Spinner = findViewById(R.id.spinner)
         val imageViewChangeTheme: ImageView = findViewById(R.id.imageView5)
+
+
+        // Inicializa el Spinner con opciones
+        val languages = arrayOf(getString(R.string.spanish), getString(R.string.english))
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, languages)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerChangeLanguage.adapter = adapter
+
 
         // Configura el listener para cambiar tema
         imageViewChangeTheme.setOnClickListener {
                     changeTheme()
         }
         // Configura el listener para cambiar el idioma
-        imageViewChangeLanguage.setOnClickListener {
-            changeLanguage("es")
+        spinnerChangeLanguage.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+             override fun onItemSelected(parent: AdapterView<*>, view: android.view.View, position: Int, id: Long) {
+                val selectedLanguage = when (position) {
+                    0 -> "es" // Español
+                    1 -> "en" // Inglés
+                    else -> "es"
+                }
+                changeLanguage(selectedLanguage)
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+
+            }
         }
-
-
     }
+
 
     private fun changeTheme() {
         // Obtiene el tema actual
@@ -63,6 +93,36 @@ class ProfileActivity :  AppCompatActivity() {
     }
 
     private fun changeLanguage(languageCode: String) {
-        
+        // Guarda el idioma seleccionado en SharedPreferences
+        sharedPreferences.edit().putString("language", languageCode).apply()
+
+        // Cambia el idioma de la aplicación
+        val locale = Locale(languageCode)
+        Locale.setDefault(locale)
+
+        // Crear una nueva configuración con el nuevo idioma
+        val config = Configuration(resources.configuration)
+        config.setLocale(locale)
+
+        // Actualiza la configuración de recursos
+        resources.updateConfiguration(config, resources.displayMetrics)
+
     }
+
+    private fun setLocale(lang: String) {
+        val locale = Locale(lang)
+        Locale.setDefault(locale)
+
+        // Crear una nueva configuración con el nuevo idioma
+        val config = Configuration(resources.configuration)
+        config.setLocale(locale)
+
+        // Actualiza la configuración de recursos
+        resources.updateConfiguration(config, resources.displayMetrics)
+
+        // Reinicia la actividad para aplicar los cambios
+        recreate()
+    }
+
+
 }
