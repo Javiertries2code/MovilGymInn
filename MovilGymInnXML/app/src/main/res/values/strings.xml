@@ -38,7 +38,12 @@
     <string name="nameProfile">Name</string>
     <string name="spanish">Spanish</string>
     <string name="english">English</string>
-
+    <string name="levelsWorkout">Filtrar por Niveles</string>
+    <string name="filterWorkout">Filtrar</string>
+    <string name="trainerWorkout">Entrenador</string>
+    <string name="textWorkout">Workout</string>
+    <string name="UserLevelWorkout">Nivel del usuario:</string>
+    <string name="buttonReproduceWorkout">Reproducir</string>
 
 
 </resources>

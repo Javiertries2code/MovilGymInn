@@ -24,5 +24,14 @@ class WorkOutsActivity  : AppCompatActivity() {
             finish()
         }
 
+        val btnEntrenador = findViewById<Button>(R.id.trainerButtonWorkout)
+        btnEntrenador.setOnClickListener {
+            val intent = Intent(this, TrainerActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
+
     }
 }
