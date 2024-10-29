@@ -1,4 +1,8 @@
 <resources>
+
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <!-- Pantalla login-->
     <string name="app_name">GymInnXML</string>
     <string name="nameLogin">GimmInn</string>
     <string name="login">Login</string>
@@ -26,6 +30,12 @@
     <string name="imageViewWorkouts">Image</string>
     <string name="imageviewWorkouts2">TODO</string>
     <string name="btnReturnWorkouts">Return</string>
+    <string name="levelsWorkout">Filter by levels</string>
+    <string name="filterWorkout">Filter</string>
+    <string name="trainerWorkout">Trainer</string>
+    <string name="UserLevelWorkout">User level</string>
+    <string name="buttonReproduceWorkout">Reproduce</string>
+    <string name="textWorkout">Workout</string>
 
     <!-- Pantalla Perfil  -->
     <string name="btnReturnProfile">Return</string>
@@ -36,22 +46,18 @@
     <string name="userProfile">User</string>
     <string name="surnameProfile">Surname</string>
     <string name="nameProfile">Name</string>
-    <string name="spanish">Spanish</string>
-    <string name="english">English</string>
-    <string name="levelsWorkout">Filtrar por Niveles</string>
-    <string name="filterWorkout">Filtrar</string>
-    <string name="trainerWorkout">Entrenador</string>
-    <string name="textWorkout">Workout</string>
-    <string name="UserLevelWorkout">Nivel del usuario:</string>
-    <string name="buttonReproduceWorkout">Reproducir</string>
+
+
+    <!-- Pantalla Entrenador  -->
     <string name="imageLogoTrainer">TODO</string>
-    <string name="txtTrainer">Entrenador</string>
-    <string name="editTextTrainer">Filtrar por Workout</string>
-    <string name="buttonFilter">Filtrar</string>
-    <string name="buttonAddTrainer">Añadir</string>
-    <string name="buttonEditTrainer">Modificar</string>
-    <string name="buttonDeleteTrainer">Eliminar</string>
-    <string name="buttonReturnTrainer">Volver</string>
+    <string name="txtTrainer">Trainer</string>
+    <string name="editTextTrainer">Filter by levels</string>
+    <string name="buttonFilterTrainer">Filter</string>
+    <string name="buttonAddTrainer">Add</string>
+    <string name="buttonEditTrainer">Modify</string>
+    <string name="buttonDeleteTrainer">Delete</string>
+    <string name="buttonReturnTrainer">Back</string>
+
 
 
 </resources>
