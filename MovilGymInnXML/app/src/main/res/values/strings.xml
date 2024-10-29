@@ -44,6 +44,14 @@
     <string name="textWorkout">Workout</string>
     <string name="UserLevelWorkout">Nivel del usuario:</string>
     <string name="buttonReproduceWorkout">Reproducir</string>
+    <string name="imageLogoTrainer">TODO</string>
+    <string name="txtTrainer">Entrenador</string>
+    <string name="editTextTrainer">Filtrar por Workout</string>
+    <string name="buttonFilter">Filtrar</string>
+    <string name="buttonAddTrainer">Añadir</string>
+    <string name="buttonEditTrainer">Modificar</string>
+    <string name="buttonDeleteTrainer">Eliminar</string>
+    <string name="buttonReturnTrainer">Volver</string>
 
 
 </resources>
