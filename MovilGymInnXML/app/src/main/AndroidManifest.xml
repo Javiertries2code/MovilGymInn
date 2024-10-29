@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -24,6 +25,13 @@
         <activity android:name=".WorkOutsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".TrainerActivity" />
+
+        <uses-permission android:name="android.permission.INTERNET"
+            tools:ignore="WrongManifestParent" />
+        <uses-permission android:name=
+            "android.permission.ACCES_NETWORK_STATE2"
+            tools:ignore="WrongManifestParent" />
+
 
     </application>
 
