@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GymInnXML</string>
+    <string name="nameLogin">GimmInn</string>
+    <string name="login">Login</string>
+    <string name="registerLogin">Register</string>
+    <string name="remember">Remember me</string>
+    <string name="userLogin">User</string>
+    <string name="passwordLogin" >Password</string>
+    <string name="imageViewLogin">Image</string>
+    <!-- Pantalla registro-->
+    <string name="EditTextNameRegister">Name</string>
+    <string name="EditTextSurnameRegister">Surname</string>
+    <string name="EditTextEmailRegister">Email</string>
+    <string name="EditTextBirthDayRegister">Date of Birth</string>
+    <string name="EditTextUserRegister">User</string>
+    <string name="EditTextPasswordRegister">Password</string>
+    <string name="LogoImageRegister">TODO</string>
+    <string name="RegisterTitle">REGISTER</string>
+    <string name="RegisterButton">Register</string>
+    <string name="TextReturnRegister">Return </string>
+    <string name="checkboxTrainerRegister">Trainer</string>
+    <string name="imageViewRegister">Image</string>
+
+    <!-- Pantalla WorkOuts  -->
+    <string name="textNameWorkOuts">WORKOUT</string>
+    <string name="imageViewWorkouts">Image</string>
+    <string name="imageviewWorkouts2">TODO</string>
+    <string name="btnReturnWorkouts">Return</string>
+
+    <!-- Pantalla Perfil  -->
+    <string name="btnReturnProfile">Return</string>
+    <string name="ImageThemeChangeProfile">TODO</string>
+    <string name="imageLanguageChangeProfile">TODO</string>
+    <string name="EditTextBirthDayProfile">Date of Birth</string>
+    <string name="emailProfile">Email</string>
+    <string name="userProfile">User</string>
+    <string name="surnameProfile">Surname</string>
+    <string name="nameProfile">Name</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="levelsWorkout">Filtrar por Niveles</string>
+    <string name="filterWorkout">Filtrar</string>
+    <string name="trainerWorkout">Entrenador</string>
+    <string name="textWorkout">Workout</string>
+    <string name="UserLevelWorkout">Nivel del usuario:</string>
+    <string name="buttonReproduceWorkout">Reproducir</string>
+    <string name="imageLogoTrainer">TODO</string>
+    <string name="txtTrainer">Entrenador</string>
+    <string name="editTextTrainer">Filtrar por Workout</string>
+    <string name="buttonFilter">Filtrar</string>
+    <string name="buttonAddTrainer">Añadir</string>
+    <string name="buttonEditTrainer">Modificar</string>
+    <string name="buttonDeleteTrainer">Eliminar</string>
+    <string name="buttonReturnTrainer">Volver</string>
+
+
+</resources>
