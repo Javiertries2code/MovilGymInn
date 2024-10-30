@@ -1,4 +1,4 @@
-package com.example.gyminnxml.activities
+package com.example.gyminnxml
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -11,7 +11,6 @@ import android.widget.ImageView
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.example.gyminnxml.R
 import java.util.Locale
 
 class ProfileActivity :  AppCompatActivity() {

@@ -1,11 +1,10 @@
-package com.example.gyminnxml.activities
+package com.example.gyminnxml
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.gyminnxml.R
 
 class WorkOutsActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

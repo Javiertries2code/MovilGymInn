@@ -1,4 +1,9 @@
 <resources>
+
+    <string name="english">Ingles</string>
+    <string name="spanish">Español</string>
+
+    <!-- Pantalla login-->
     <string name="app_name">GymInnXML</string>
     <string name="nameLogin">GimmInn</string>
     <string name="login">Login</string>
@@ -26,6 +31,12 @@
     <string name="imageViewWorkouts">Imagen</string>
     <string name="imageviewWorkouts2">TODO</string>
     <string name="btnReturnWorkouts">Volver</string>
+    <string name="levelsWorkout">Filtrar por Niveles</string>
+    <string name="filterWorkout">Filtrar</string>
+    <string name="trainerWorkout">Entrenador</string>
+    <string name="textWorkout">Workout</string>
+    <string name="UserLevelWorkout">Nivel del usuario:</string>
+    <string name="buttonReproduceWorkout">Reproducir</string>
 
     <!-- Pantalla Perfil  -->
     <string name="btnReturnProfile">Volver</string>
@@ -37,8 +48,16 @@
     <string name="surnameProfile">Apellido</string>
     <string name="nameProfile">Nombre</string>
 
-    <string name="english">Ingles</string>
-    <string name="spanish">Español</string>
+
+    <!-- Pantalla Entrenador  -->
+    <string name="imageLogoTrainer">TODO</string>
+    <string name="txtTrainer">Entrenador</string>
+    <string name="editTextTrainer">"Filtrar por niveles "</string>
+    <string name="buttonFilterTrainer">Filtrar</string>
+    <string name="buttonAddTrainer">Añadir</string>
+    <string name="buttonEditTrainer">Modificar</string>
+    <string name="buttonDeleteTrainer">Eliminar</string>
+    <string name="buttonReturnTrainer">Volver</string>
 
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.gyminnxml.activities
+package com.example.gyminnxml
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,12 +10,11 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.example.gyminnxml.R
 import com.example.gyminnxml.models.User
 import com.example.gyminnxml.viewmodels.RegisterViewModel
 
 class RegisterActivity : AppCompatActivity() {
-//HOLAAAA
+
     private val registerViewModel: RegisterViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
