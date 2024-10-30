@@ -16,7 +16,7 @@ class LoginViewModel(private val userRepository: UserRepository = UserRepository
                 if (documents.isEmpty) {
                     _loginStatus.value = "Usuario o contraseña incorrectos."
                 } else {
-                    _loginStatus.value = "Login exitoso"
+                    _loginStatus.value = "Bienvenido"
                 }
             }
             .addOnFailureListener { e ->
