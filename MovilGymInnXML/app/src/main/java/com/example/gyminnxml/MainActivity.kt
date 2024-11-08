@@ -31,21 +31,19 @@ class MainActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("GymInnPrefs", MODE_PRIVATE)
 
         setupObservers()
+
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         btnLogin.setOnClickListener {
             val email = editTextEmail.text.toString().trim()
             val password = editTextPassword.text.toString().trim()
+
+            // Llamamos al método loginUser del ViewModel
             loginViewModel.loginUser(email, password)
         }
 
         val btnRegistro = findViewById<Button>(R.id.btnRegistro)
         btnRegistro.setOnClickListener {
-            startActivity(
-                Intent(
-                    this,
-                    RegisterActivity::class.java
-                )
-            )
+            startActivity(Intent(this, RegisterActivity::class.java))
             finish()
         }
     }
@@ -55,9 +53,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, status, Toast.LENGTH_SHORT).show()
             if (status == "Bienvenido") {
                 saveUserIfRemembered()
-                startActivity(
-                    Intent(this, WorkOutsActivity::class.java)
-                )
+                startActivity(Intent(this, WorkOutsActivity::class.java))
                 finish()
             }
         })
@@ -69,7 +65,6 @@ class MainActivity : AppCompatActivity() {
             editor.putString("last_user_email", editTextEmail.text.toString().trim())
             editor.putString("last_user_password", editTextPassword.text.toString().trim())
         } else {
-            // Eliminamos las credenciales guardadas si el checkbox no está marcado
             editor.remove("last_user_email")
             editor.remove("last_user_password")
         }
@@ -86,3 +81,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
