@@ -14,7 +14,9 @@ class TrainerActivity :  AppCompatActivity() {
         buttonVolver.setOnClickListener {
             val intent = Intent(this, WorkoutsActivity::class.java)
             startActivity(intent)
-            finish()
+
+
+
         }
 
 

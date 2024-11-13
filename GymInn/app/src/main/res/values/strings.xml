@@ -43,4 +43,5 @@
     <string name="buttonEditTrainer">Edit</string>
     <string name="buttonDeleteTrainer">Delete</string>
     <string name="buttonReturnTrainer">Return</string>
+    <string name="birthday_profile">Birth date</string>
 </resources>
