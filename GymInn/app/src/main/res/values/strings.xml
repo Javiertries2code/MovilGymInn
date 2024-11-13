@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">PruebaReto</string>
     <string name="email">Email</string>
-    <string name="ç">Login</string>
+    <string name="login_1">Login</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
@@ -12,18 +12,35 @@
     <string name="name_profile">Name</string>
     <string name="return_button_profile">Return</string>
     <string name="todo_profile">TODO</string>
-    <string name="perfil_button_workout">Perfil</string>
+    <string name="profile_button_workout">Profile</string>
     <string name="return_button">Return</string>
     <string name="remember_me_CheckBox">Remember me</string>
     <string name="image_login">TODO</string>
     <string name="birth_date_register">Birth Date</string>
     <string name="email_register">Email</string>
-    <string name="entrenador_register">Entrenador</string>
+    <string name="trainer_register">Trainer</string>
     <string name="last_name_register">Last Name</string>
     <string name="first_name_register">First Name</string>
     <string name="register_button">Register</string>
     <string name="password_register">Password</string>
     <string name="return_register">Return</string>
     <string name="guideline_register">TODO</string>
-    <string name="cliente_register">Cliente</string>
+    <string name="user_register">User</string>
+    <string name="imageViewWorkouts">Image</string>
+    <string name="textWorkout">Workouts</string>
+    <string name="imageviewWorkouts2">Image</string>
+    <string name="UserLevelWorkout">User Level</string>
+    <string name="levelsWorkout">Filter level</string>
+    <string name="filterWorkout">Filter</string>
+    <string name="trainerWorkout">Trainer</string>
+    <string name="btnReturnWorkouts">Return</string>
+    <string name="buttonReproduceWorkout">Workouts</string>
+    <string name="imageLogoTrainer">Image</string>
+    <string name="txtTrainer">Trainer</string>
+    <string name="editTextTrainer">Filter level</string>
+    <string name="buttonFilterTrainer">Filter</string>
+    <string name="buttonAddTrainer">Add</string>
+    <string name="buttonEditTrainer">Edit</string>
+    <string name="buttonDeleteTrainer">Delete</string>
+    <string name="buttonReturnTrainer">Return</string>
 </resources>

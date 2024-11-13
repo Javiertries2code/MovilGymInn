@@ -75,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/profile_button"
         tools:ignore="Autofill,TextFields" />
 
     <Button
@@ -105,7 +105,7 @@
         android:layout_width="97dp"
         android:layout_height="48dp"
         android:layout_below="@id/birth_date_edit_text"
-        android:text="@string/cliente_register"
+        android:text="@string/user_register"
         app:layout_constraintBottom_toTopOf="@+id/register_button"
         app:layout_constraintEnd_toEndOf="@+id/entrenador_check_box"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cliente_check_box"
-        android:text="@string/entrenador_register"
+        android:text="@string/trainer_register"
         app:layout_constraintBottom_toTopOf="@+id/register_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cliente_check_box"
@@ -133,7 +133,7 @@
         app:layout_constraintGuide_end="235dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/profile_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/name_edit_text"

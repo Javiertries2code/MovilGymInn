@@ -12,7 +12,7 @@ class UserRepository {
     private val auth = FirebaseAuth.getInstance()
 
 
-    fun saveUser(user: User, onComplete: (Boolean) -> Unit) {
+    private fun saveUser(user: User, onComplete: (Boolean) -> Unit) {
         val userCollection = firestore.collection("users")
 
         userCollection.document(user.user).set(user)
@@ -24,26 +24,6 @@ class UserRepository {
                 onComplete(false)
             }
     }
-
-
-    fun getUser(userId: String, onComplete: (User?) -> Unit) {
-        val userCollection = firestore.collection("users")
-
-        userCollection.document(userId).get()
-            .addOnSuccessListener { document ->
-                if (document.exists()) {
-                    val user = document.toObject(User::class.java)
-                    onComplete(user)
-                } else {
-                    onComplete(null)
-                }
-            }
-            .addOnFailureListener { e ->
-                Log.e("UserRepository", "Error fetching user", e)
-                onComplete(null)
-            }
-    }
-
 
     fun registerUser(email: String, password: String, user: User, onComplete: (Boolean) -> Unit) {
         auth.createUserWithEmailAndPassword(email, password)
