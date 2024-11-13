@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gymlogo"
+        android:layout_width="184dp"
+        android:layout_height="88dp"
+        android:contentDescription="@string/imageLogoTrainer"
+        android:src="@drawable/logo4"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/pageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txtTrainer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gymlogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@id/filterByWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/editTextTrainer"
+        android:inputType=""
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/filterButtonTrainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutList"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/filterButtonTrainer"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end"
+        android:text="@string/buttonFilterTrainer"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterByWorkout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/workoutList"
+        android:layout_width="414dp"
+        android:layout_height="230dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/filterByWorkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:text="@string/buttonAddTrainer"
+        app:layout_constraintBottom_toTopOf="@+id/backButtonTrainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editButton"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:text="@string/buttonEditTrainer"
+        app:layout_constraintBottom_toTopOf="@+id/backButtonTrainer"
+        app:layout_constraintEnd_toStartOf="@+id/addButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/deleteButton"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:text="@string/buttonDeleteTrainer"
+        app:layout_constraintBottom_toTopOf="@+id/backButtonTrainer"
+        app:layout_constraintEnd_toStartOf="@+id/editButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/backButtonTrainer"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:text="@string/buttonReturnTrainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="128dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="504dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
