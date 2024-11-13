@@ -52,6 +52,7 @@ class ProfileActivity : AppCompatActivity() {
         val nameText = findViewById<TextView>(R.id.name_text)
         val lastNameText = findViewById<TextView>(R.id.last_name_text)
         val emailText = findViewById<TextView>(R.id.email_text)
+        val birthdayText = findViewById<TextView>(R.id.birthdate_text)
 
         db.collection("users").document(userId).get()
             .addOnSuccessListener { document ->
@@ -59,9 +60,12 @@ class ProfileActivity : AppCompatActivity() {
                     val name = document.getString("name")
                     val lastName = document.getString("lastName")
                     val email = document.getString("email")
+                    val birthDate = document.getString("birthDate")
+
                     nameText.text = name
                     lastNameText.text = lastName
                     emailText.text = email
+                    birthdayText.text =birthDate
                 }
             }
     }
