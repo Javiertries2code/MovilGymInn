@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PruebaReto</string>
+    <string name="email">Email</string>
+    <string name="ç">Login</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="change_language_profile">Change Language</string>
+    <string name="change_theme_profile">Change Theme</string>
+    <string name="email_profile">Email</string>
+    <string name="last_name_profile">Last Name</string>
+    <string name="name_profile">Name</string>
+    <string name="return_button_profile">Return</string>
+    <string name="todo_profile">TODO</string>
+    <string name="perfil_button_workout">Perfil</string>
+    <string name="return_button">Return</string>
+    <string name="remember_me_CheckBox">Remember me</string>
+    <string name="image_login">TODO</string>
+    <string name="birth_date_register">Birth Date</string>
+    <string name="email_register">Email</string>
+    <string name="entrenador_register">Entrenador</string>
+    <string name="last_name_register">Last Name</string>
+    <string name="first_name_register">First Name</string>
+    <string name="register_button">Register</string>
+    <string name="password_register">Password</string>
+    <string name="return_register">Return</string>
+    <string name="guideline_register">TODO</string>
+    <string name="cliente_register">Cliente</string>
+</resources>
