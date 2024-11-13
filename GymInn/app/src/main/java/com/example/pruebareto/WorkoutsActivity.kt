@@ -32,6 +32,5 @@ class WorkoutsActivity : AppCompatActivity() {
             val intent = Intent(this, TrainerActivity::class.java)
             startActivity(intent)
         }
-        }
-
+    }
 }

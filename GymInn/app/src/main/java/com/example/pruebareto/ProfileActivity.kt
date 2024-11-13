@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class ProfileActivity : AppCompatActivity() {
-
+    //sw600dp
     private lateinit var auth: FirebaseAuth
     private val db = FirebaseFirestore.getInstance()
     private lateinit var sharedPreferences: SharedPreferences
@@ -60,7 +60,7 @@ class ProfileActivity : AppCompatActivity() {
                     val name = document.getString("name")
                     val lastName = document.getString("lastName")
                     val email = document.getString("email")
-                    val birthDate = document.getString("birthDate")
+                    val birthDate = document.getString("email")
 
                     nameText.text = name
                     lastNameText.text = lastName
